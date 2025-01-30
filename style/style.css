@@ -1,0 +1,319 @@
+body{
+    margin: 0;
+    padding: 0;
+    color: white;
+    font-family: "open sans",sans-serif;
+}
+div{
+    box-sizing: border-box;
+}
+/* .container{
+    display: flex;
+    background-color: #0a4152;
+} */
+.hero{
+    height: 182px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #0a4152;
+}
+
+.mid{
+    display: flex;
+    flex-direction: column;
+    
+}
+.searchbar{
+    display: flex;
+    width: 775px;
+    height: 55px;
+    background-color: white;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 17px;
+}
+.search-btn{
+    display: flex;
+    width: 100px;
+    height: 56px;
+    background-color: #0d9fcf;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+}
+
+.search{
+    display: flex;
+    gap: 20px;
+    margin-top: 25px;
+    color: black;
+}
+
+.logo{
+    margin-top: 25px;
+    margin-left: 202px;
+
+}
+.kategorien{
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    padding-top: 22px;
+}
+
+.account{
+    display: flex;
+    flex-direction: row;
+    margin-top: 25px;
+    margin-right: 201px;
+    flex-wrap: wrap;
+    width: 250px;
+    gap: 5px;
+    height: 126px;
+}
+
+.name{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #547a86;
+    width: 290px;
+    height: 40px;
+    padding-left: 8px;
+}
+
+.warenkorb{
+    display: flex;
+    height: 86;
+    width: 114px;
+    justify-content: center;
+    align-items: center;
+    background-color: #547a86;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    width: 130px;
+    gap: 5px;
+}
+.parkplatz{
+    margin: 0;
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #547a86;
+    padding-left: 11px;
+}
+.merkliste{
+    margin: 0;
+    display: flex;
+    height: 40px;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #547a86;
+    padding-left: 11px;
+}
+
+
+
+/* .dropbtn {
+display:block;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  min-width: 105px;
+  width: 250px;
+  margin: 0;
+}
+
+.kategorie{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+}
+
+.dropdown {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  margin-top: 100px;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: white;
+  min-width: 105px;
+  width: 250px;
+  border: solid 2px #0d9fcf;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-bottom: solid black 2px;
+  margin: 0;
+}
+.dropdown-content a:last-child{
+	border-bottom: none;
+    margin: 0;
+}
+
+.dropdown-content a:hover {color: #0d9fcf;}
+
+.dropdown:hover .dropdown-content{
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown:hover .dropbtn {background-color: #0d9fcf;} */
+
+.dropbtn {
+    display:block;
+      background-color: #0a4152;
+      color: white;
+      /* padding: 16px; */
+      font-size: 16px;
+      border: none;
+      min-width: 105px;
+      margin: 0;
+      margin-top: 15px;
+      text-align: center;
+    }
+    
+    .dropdown {
+      position: relative;
+      display: inline-block;
+      margin: 0;
+    }
+    
+    .dropdown-content {
+      display: none;
+      background-color: #fff;
+      min-width: 105px;
+      width: 250px;
+      border: solid 2px #127090;
+      box-sizing: border-box;
+      margin: 0;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      border-bottom: solid #0d9fcf 2px;
+      margin: 0;
+    }
+    /* .dropdown-content a:last-child{
+        border-bottom: none;
+        margin: 0;
+    } */
+    
+    .dropdown-content a:hover {background-color: #0d9fcf;
+    color: white;}
+    
+    .dropdown:hover .dropdown-content {
+        display: flex;
+        position: absolute;
+        flex-direction: row;
+        width: auto;
+        /* justify-content: center;
+        align-items: center; */
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+    
+    .dropdown:hover .dropbtn {background-color: #0a4152;}
+
+
+
+    *,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+
+    .kategorie {
+        position: relative;
+        display: inline-block;
+    }
+    
+    .dropdown {
+        display: none;
+        position: absolute;
+        background-color: white;
+        z-index: 1;
+        flex-direction: row; /* Display the first dropdown horizontally */
+        left: 50%;
+        transform: translateX(-50%);
+        color: black;
+        border: #0d9fcf solid 2px;
+        width: 1200px;
+    }
+    
+    .kategorie:hover .dropdown {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sub-kategorie {
+        position: relative;
+        padding: 12px 18px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        flex-direction: column; /* Stack image and text vertically */
+    }
+    
+    .sub-kategorie:hover .nested-dropdown {
+        display: flex;
+        flex-direction: column; /* Display the nested dropdowns vertically */
+    }
+    .sub-kategorie img {
+        margin-bottom: 12px; /* Add some space between the image and text */
+    }
+    .sub-kategorie:hover {
+        /* background-color: #0d9fcf; */
+        color: #0d9fcf;
+    }
+    
+    .nested-dropdown {
+        display: none;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 100%;
+        background-color: white;
+        z-index: 1;
+        box-sizing: content-box;
+        border: #0d9fcf solid 2px;
+        color: black;
+        min-width: 180px;
+    }
+    
+    .nested-sub-kategorie {
+        padding: 12px 16px;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        border-bottom: #0d9fcf solid 2px;
+    }
+    .nested-sub-kategorie:last-child{
+        border-bottom: none;
+    }
+    .nested-sub-kategorie:hover {
+        background-color: #0d9fcf;
+        color: white;
+    }
