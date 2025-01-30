@@ -1,4 +1,4 @@
-body{
+    body{
     margin: 0;
     padding: 0;
     color: white;
@@ -14,7 +14,8 @@ div{
 .hero{
     height: 182px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 20px;
     background-color: #0a4152;
 }
 
